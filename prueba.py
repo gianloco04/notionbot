@@ -1,10 +1,14 @@
 from notion_client import Client
-import json
+import os
+
+# Leer variables de entorno
+NOTION_TOKEN = os.getenv("NOTION_TOKEN")
+DATABASE_ORIGEN_ID = os.getenv("DATABASE_ORIGEN_ID")
+DATABASE_DESTINO_ID = os.getenv("DATABASE_DESTINO_ID")
 
 notion = Client(auth=NOTION_TOKEN)
 
 # IDs
-
 supasend_db_id = DATABASE_ORIGEN_ID
 todo_db_id = DATABASE_DESTINO_ID
 
