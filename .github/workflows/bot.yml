@@ -1,8 +1,8 @@
-name: Ejecutar bot cada 1 minutos
+name: Ejecutar bot cada 5 minutos
 
 on:
   schedule:
-    - cron: "*/1 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
