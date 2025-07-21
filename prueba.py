@@ -1,12 +1,12 @@
 from notion_client import Client
 import json
 
-notion = Client(auth="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")
+notion = Client(auth=NOTION_TOKEN)
 
 # IDs
 
-supasend_db_id = "237d54d6757581e1952fe0133d4871d6"
-todo_db_id = "236d54d67575812a89c1dadd08a74f24"
+supasend_db_id = DATABASE_ORIGEN_ID
+todo_db_id = DATABASE_DESTINO_ID
 
 # 1. Obtener la última página creada en Supasend
 response = notion.databases.query(
