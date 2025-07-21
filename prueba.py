@@ -14,7 +14,7 @@ notion = Client(auth=NOTION_TOKEN)
 
 # 1. Obtener todas las páginas activas en Supasend
 response = notion.databases.query(
-    database_id=supasend_db_id,
+    database_id=DATABASE_ORIGEN_ID,
     sorts=[{"timestamp": "created_time", "direction": "descending"}],
     page_size=1
 )
